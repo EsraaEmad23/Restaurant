@@ -22,7 +22,7 @@ Welcome to **Luxury Food**, a stylish and modern restaurant website that showcas
 ## 📌 Installation & Usage
 1. Clone this repository:
    ```sh
-   git clone https://github.com/yourusername/restaurant-website.git
+   git clone https://github.com/EsraaEmad23/Restaurant.git
    ```
 2. Open `restaurant.html` in your browser.
 
