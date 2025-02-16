@@ -1,0 +1,271 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Luxury Restaurant</title>
+    <style>
+        
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: 'Arial', sans-serif;
+        }
+
+        body {
+            background-color: #f5f5f5;  
+            color: #333;  
+        }
+
+        
+        .header {
+            position: fixed;
+            width: 100%;
+             top: 0;
+            left: 0;
+            z-index: 1000; 
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 20px 5%;
+            background-color: #fff;
+            box-shadow: 0px 2px 10px rgba(0, 0, 0, 0.1);
+        }
+
+
+        .logo {
+            font-size: 24px;
+            font-weight: bold;
+            text-transform: uppercase;
+            letter-spacing: 2px;
+        }
+
+        .logo span {
+            color: #d48806;
+        }
+
+        .nav {
+            display: flex;
+            gap: 20px;
+        }
+
+        .nav a {
+            text-decoration: none;
+            color: #666;
+            font-size: 16px;
+            transition: 0.3s;
+        }
+
+        .nav a:hover {
+            color: #d48806;
+        }
+
+        .order-btn {
+            padding: 8px 20px;
+            border: 2px solid #d48806;
+            background: transparent;
+            color: #d48806;
+            font-size: 16px;
+            cursor: pointer;
+            transition: 0.3s;
+        }
+
+        .order-btn:hover {
+            background: #d48806;
+            color: #fff;
+        }
+
+        
+        .hero {
+            display: flex;
+            align-items: center;
+            justify-content: flex-end;  
+            padding: 50px 5%;
+            padding-top: 80px;
+            background-image: url('https://github.com/EsraaEmad23/Restaurant/blob/main/Screenshot%202025-02-16%20041614.png?raw=true'); 
+            background-size: cover;
+            background-position: right center;  
+            background-repeat: no-repeat;
+            min-height: 500px;  
+            color: white;  
+            text-shadow: 2px 2px 10px rgba(0, 0, 0, 0.5);  
+        }
+
+        .hero-text {
+    max-width: 40%;
+    padding: 20px;
+    border-radius: 10px;
+    opacity: 0;  
+    transform: translateY(30px);  
+    animation: fadeInUp 1s ease-out forwards;  
+    color: white;  
+    text-shadow: 2px 2px 10px rgba(0, 0, 0, 0.5);  
+    background: none; 
+}
+
+        .hero-text h1 {
+            font-size: 50px;
+            font-weight: bold;
+        }
+
+        .hero-text p {
+            font-size: 18px;
+            margin: 15px 0;
+        }
+
+        .reservation-btn {
+            display: inline-block;
+            background: #d48806;
+            padding: 10px 25px;
+            font-size: 18px;
+            color: #fff;
+            text-decoration: none;
+            margin-top: 15px;
+            border-radius: 5px;
+            transition: 0.3s;
+        }
+
+        .reservation-btn:hover {
+            background: #e6a23c;
+        }
+
+        
+        @keyframes fadeInUp {
+            from {
+                opacity: 0;
+                transform: translateY(30px);
+            }
+            to {
+                opacity: 1;
+                transform: translateY(0);
+            }
+        }
+
+        @media (max-width: 768px) {
+            .hero {
+                flex-direction: column;
+                text-align: center;
+                background-position: center;
+            }
+
+            .hero-text {
+                max-width: 100%;
+            }
+        }
+
+        .about {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 60px 10%;
+}
+
+.about-content {
+    flex: 1;
+    max-width: 50%;
+}
+
+.subtitle {
+    color: #E76F51;
+    font-size: 16px;
+    font-weight: bold;
+    text-transform: uppercase;
+}
+
+.title {
+    font-size: 36px;
+    font-weight: bold;
+    margin: 10px 0;
+}
+
+.description {
+    font-size: 16px;
+    color: #555;
+    line-height: 1.6;
+}
+
+.features {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 20px;
+    margin-top: 20px;
+}
+
+.feature-item {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.feature-item img {
+    width: 50px;
+    height: 50px;
+    border-radius: 5px;
+}
+
+.about-image img {
+    max-width: 500px;
+    border-radius: 10px;
+}
+
+    </style>
+</head>
+<body>
+
+    
+    <header class="header">
+        <div class="logo">Luxury <span>Food</span></div>
+        <nav class="nav">
+            <a href="#">Home</a>
+            <a href="#">About</a>
+            <a href="#">Menu</a>
+            <a href="#">Blog</a>
+            <a href="#">Contact</a>
+        </nav>
+        <button class="order-btn">Order Online</button>
+    </header>
+
+     
+    <section class="hero">
+        <div class="hero-text">
+            <h1>We Serve Luxury Food</h1>
+            <p>Enjoy an elegant dining experience with the finest gourmet dishes.</p>
+            <a href="#" class="reservation-btn">Make a Reservation</a>
+        </div>
+    </section>
+
+    <section class="about">
+        <div class="about-content">
+            <span class="subtitle">Discover Your Taste</span>
+            <h2 class="title">We Provide Good Food <br> For Your Family!</h2>
+            <p class="description">
+                Ut enim acgsd minim veniam, quxcis nostrud exercitation ullamco laboris nisi 
+                usfit aliquip ex ea commodo consequat is aute irure m, quis nostrud exer.
+            </p>
+            <div class="features">
+                <div class="feature-item">
+                    <img src="https://github.com/EsraaEmad23/Restaurant/blob/main/22,000+%20Waiter%20Serving%20Stock%20Illustrations,%20Royalty-Free%20Vector%20Graphics%20&%20Clip%20Art.jpeg?raw=true" alt="Waiter Icon">
+                    <p>Ut enim ad minim veniam, quis nostrud exer.</p>
+                </div>
+                <div class="feature-item">
+                    <img src="https://github.com/EsraaEmad23/Restaurant/blob/main/Find%20the%20best%20global%20talent_.jpeg?raw=true" alt="Talent Icon">
+                    <p>Ut enim ad minim veniam, quis nostrud exer.</p>
+                </div>
+                <div class="feature-item">
+                    <img src="https://github.com/EsraaEmad23/Restaurant/blob/main/Spoon%20Fork%20Logo%20Vector%20PNG%20Images,%20Crossed%20Spoon%20And%20Fork%20Restaurant%20And%20%20Logo%20Design,%20Tools%20Clipart,%20Logo,%20Symbol%20PNG%20Image%20For%20Free%20Download.jpeg?raw=true" alt="Spoon and Fork Icon">
+                    <p>Ut enim ad minim veniam, quis nostrud exer.</p>
+                </div>
+                <div class="feature-item">
+                    <img src="https://github.com/EsraaEmad23/Restaurant/blob/main/download%20(1).jpeg?raw=true" alt="Food Icon">
+                    <p>Ut enim ad minim veniam, quis nostrud exer.</p>
+                </div>
+            </div>
+        </div>
+        <div class="about-image">
+            <img src="https://github.com/EsraaEmad23/Restaurant/blob/main/%E7%BE%8E%E9%A3%9F.jpeg?raw=true" alt="Restaurant Image">
+        </div>
+    </section>
+    
+</body>
+</html>
